@@ -1,0 +1,41 @@
+/* Chessboard.css */
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .square {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .light {
+    background-color: #f0d9b5; /* Light square color */
+  }
+  
+  .dark {
+    background-color: #b58863; /* Dark square color */
+  }
+  
+  .empty {
+    opacity: 0.5; /* Adjust the opacity for empty squares */
+  }
+  
+  .square img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  
+  /* Add additional styling as needed */
+  
+
+
+ 

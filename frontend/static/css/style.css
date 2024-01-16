@@ -1,0 +1,21 @@
+/* Add these styles to your existing CSS files or create new ones */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    padding: 0 20px; /* Adjust spacing */
+  }
+  
+  .buttons {
+    /* Styles for your buttons container */
+    width: 20%; /* Adjust the width of the buttons column */
+    text-align: left;
+  }
+  
+  .app {
+    /* Styles for your app (board) section */
+    width: 70%; /* Adjust the width of the app section */
+    text-align: right; /* Center align content */
+  }

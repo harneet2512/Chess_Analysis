@@ -1,0 +1,122 @@
+:root {
+    --background-light: lightblue;
+    --text-light: white;
+    --icon-light: crimson;
+  
+    --background-dark: #333333;
+    --text-dark: #E4F1FF;
+    --icon-dark: #AEFFDE;
+  
+    --toggle-bg-default: #343d5b;
+    --toggle-bg-dark: #ffc727;
+    --toggle-handle-default: #f1f1f1;
+    --toggle-handle-dark: #f1f1f1;
+  }
+  
+
+
+  #toggle {
+    width: 120px;
+  height: 56px;
+  background: #343d5b;
+  box-shadow: inset 0 1px 6px 4px rgba(12, 12, 12, 0.2);
+  display: block;
+  border-radius: 30px;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  position: fixed; /* Set to fixed for positioning */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  z-index: 99;
+    background: var(--toggle-bg-default);
+  }
+  
+  span {
+    width: 50px;
+  height: 50px;
+  background: #f1f1f1;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 6px 4px rgba(13, 13, 13, 0.3),
+    0 1px 6px 1px rgba(11, 11, 76, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background: var(--toggle-handle-default);
+  }
+  
+  span i {
+    font-size: 2rem;
+  color: #263053;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s
+    linear(
+      0 0%,
+      0 2.27%,
+      0.02 4.53%,
+      0.04 6.8%,
+      0.06 9.07%,
+      0.1 11.33%,
+      0.14 13.6%,
+      0.25 18.15%,
+      0.39 22.7%,
+      0.56 27.25%,
+      0.77 31.8%,
+      1 36.35%,
+      0.89 40.9%,
+      0.85 43.18%,
+      0.81 45.45%,
+      0.79 47.72%,
+      0.77 50%,
+      0.75 52.27%,
+      0.75 54.55%,
+      0.75 56.82%,
+      0.77 59.1%,
+      0.79 61.38%,
+      0.81 63.65%,
+      0.85 65.93%,
+      0.89 68.2%,
+      1 72.7%,
+      0.97 74.98%,
+      0.95 77.25%,
+      0.94 79.53%,
+      0.94 81.8%,
+      0.94 84.08%,
+      0.95 86.35%,
+      0.97 88.63%,
+      1 90.9%,
+      0.99 93.18%,
+      0.98 95.45%,
+      0.99 97.73%,
+      1 100%
+    );
+  }
+  
+  #toggle.change {
+    background: var(--toggle-bg-dark);
+  }
+  
+  span.change {
+    background: var(--toggle-handle-dark);
+  }
+  
+  /* Additional styles for moon and sun icons */
+  .moon {
+    font-size: 1.8rem;
+  }
+  
+  .moon.change {
+    font-size: 0;
+  }
+  
+  
+  .sun {
+    font-size: 0;
+  }
+  
+  .sun.change {
+    font-size: 1.8rem;
+    color: #ffa500;
+  }
+  
